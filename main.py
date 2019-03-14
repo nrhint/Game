@@ -9,3 +9,13 @@ from pygame.locals import *
 pygame.init()
 width, height = 640, 480
 screen = pygame.display.set_mode((width, height))
+
+playerImg = pygame.image.load("resources/images/dude.png")
+
+while 1:
+    screen.fill(0)
+    screen.blit(playerImg, (100, 100))
+    pygame.display.flip()
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            pygame.quit()

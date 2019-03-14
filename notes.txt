@@ -1,0 +1,13 @@
+step 1, setup:
+import pygame
+from pygame.locals import *
+pygame.init()
+
+width, height = 640, 480
+screen=pygame.display.det_mode((width, height))
+
+To show an image:
+blit(image-path, (x, y))
+
+update screen:
+pygame.flip()
