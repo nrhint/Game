@@ -7,7 +7,9 @@ width, height = 640, 480
 screen=pygame.display.det_mode((width, height))
 
 To show an image:
-blit(image-path, (x, y))
+load the image with:
+image = pygame.image.load("image-path")
+blit(image, (x, y))
 
 update screen:
 pygame.flip()
